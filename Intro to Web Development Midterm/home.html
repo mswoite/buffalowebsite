@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:400italic' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head>
+    <body id="home">
+        <div class="container">
+        
+            <div id="header">
+                <div class="overlay">
+                    <h1 class="headertext">Buffalo, New York</h1>
+                </div>
+            </div>
+        
+            <div id="navBarContainer">
+                <div class="navLinksContainer">
+                    <ul>
+                        <li>
+                            <a href="home.html" id="homenav">Home</a>
+                        </li>
+                        <li>
+                            <a href="history.html" id="historynav">History</a>
+                        </li>
+                        <li>
+                            <a href="sports.html" id="sportsnav">Sports</a>
+                        </li>
+                        <li>
+                            <a href="people.html" id="peoplenav">People</a>
+                        </li>
+                        <li>
+                            <a href="funfacts.html" id="funfactsnav">Fun Facts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pagelayout">
+              
+                <div class="leftcontainer">
+                    <h1>Take a Visit to Historic Buffalo, NY!</h1>
+                    <p>Want to hate yourself more than you already do? Take a trip to Buffalo, New York! If it's not blizzarding, you can go see our National Football League team lose, or you might even get to see the President of the United States be assassinated. Cool! Once a booming city as a result of the Erie Canal, Buffalo now boasts an economy based entirely off of chicken wings. With claims to fame such as being close to Niagara Falls and having Tom Brady's dad make fun of our hotels, Buffalo is a place you will not want to miss.
+                    </p>
+                    <h2>Major Attractions</h2>
+                    <p>Buffalo is home to many famous attractions. These include:</p>
+                        <ul>
+                            <li>Niagara Falls</li>
+                            <li>Anchor Bar, Home of the Original Chicken Wings</li>
+                            <li>Duff's Famous Wings</li>
+                            <li>Buffalo Zoo</li>
+                        </ul>
+                    <p>If you've already looked at a bunch of water or ate the best wings in the world, Buffalo offers a variety of museums and architectural wonders to check out, such as the Albright Knox Art Gallery or the Darwin D. Martin House designed by Frank Lloyd Wright. Additionally, Buffalo is famous for its unique food, such as beef on weck, spongecandy, and Loganberry.</p>
+                   <h2>Learn More</h2>
+                    <p>If you've ever wanted to know more about Buffalo's history, sports, people, or general fun facts, then this is the website for you!</p>
+                </div>
+               
+                
+                <div class="slideshowcontainer">
+                   
+                    <div id="slideshow">
+                        <div>
+                            <img src="images/jimkelly1.png">
+                        </div>
+                        <div>
+                            <img src="images/anchorbar.png">
+                        </div>
+                        <div>
+                            <img src="images/snowstorm.png">
+                        </div>
+                    </div>
+            
+                    <script>
+            
+                        $(document).ready(function(){
+                            $("#slideshow > div:gt(0)").hide();
+                
+                        setInterval(function() {
+                            $('#slideshow > div:first')
+                                .fadeOut(2000)
+                                .next()
+                                .fadeIn(2000)
+                                .end()
+                                .appendTo('#slideshow');
+                            }, 3000);
+                
+                            });
+            
+                    </script>
+               
+                </div>
+            
+                <div class="imagecontainer">
+                    <img src="images/buffalo.png">
+                </div>
+                
+            </div>
+            
+            
+            
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
